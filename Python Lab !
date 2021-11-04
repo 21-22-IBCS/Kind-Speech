@@ -1,0 +1,20 @@
+import random
+
+def coffeeshop():
+  print("Welcome to Alfred's coffee shop")
+  name = input("What is your name?")
+  order = input("What would you like to order?")
+  ordernumber = str(random.randint(0,25))
+  return print(name + " , your order is a  " + order + " and your order number is " + ordernumber)
+
+def palindrome(word):
+    return word == word[::-1]
+
+def methodcallingpalindrome():
+    word = input("Check if this word is a palindrome:  ")
+    if (palindrome(word)):
+        print("Yes, " + word + " is a palindrome")
+    else:
+        print("No, " + word + " is not a palindrome")
+
+methodcallingpalindrome()
